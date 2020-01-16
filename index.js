@@ -19,7 +19,7 @@ class GetPhoto {
 
 class GetCollection {
   constructor() {
-    const unsplash = new Unsplash('/collections/62890');
+    const unsplash = new Unsplash('/collections/62890/photos');
     unsplash.then((response) => {
       console.log(response)
     }).catch((response) => {
@@ -27,7 +27,6 @@ class GetCollection {
     });
   }
 }
-
 
 const getPhoto = new GetPhoto();
 const getCollection = new GetCollection();
